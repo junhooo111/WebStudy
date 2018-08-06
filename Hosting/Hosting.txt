@@ -1,0 +1,28 @@
+Hoisting : 끌어 올리기; 들어올려 나르기.
+
+var x = 5; // Initialize x
+
+elem = document.getElementById("demo"); // Find an element 
+elem.innerHTML = x + " " + y;           // Display x and y
+
+var y = 7; // Initialize y
+
+-> 이 경우 일반적으로는 y의 값에서 오류가 나야 정상인데, javascript에서는 hoisting이 일어나 정상 출력된다.
+
+var x = 5; // Initialize x
+var y;     // Declare y
+
+elem = document.getElementById("demo"); // Find an element 
+elem.innerHTML = x + " " + y;           // Display x and y
+
+y = 7;    // Assign 7 to y
+
+-> 하지만 이런 경우는 var y 값 없이 선언되고, 출력 후에 y의 값이 입력되었으므로 hoisting되지 않았다.
+
+-->Hoisting is (to many developers) an unknown or overlooked behavior of JavaScript.
+
+If a developer doesn't understand hoisting, programs may contain bugs (errors).
+
+To avoid bugs, always declare all variables at the beginning of every scope.
+
+Since this is how JavaScript interprets the code, it is always a good rule.

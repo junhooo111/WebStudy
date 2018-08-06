@@ -1,0 +1,18 @@
+미디어 쿼리 문법 ... 반응형 웹
+
+@media only || not screen and (min-width: 400px) {...}
+
+1. only || not : only는 뒤의 조건 만, not은 뒤의 조건을 제외한 조건
+2. screen : 미디어 타입
+ - all : 모든 미디어 타입
+ - aural : 음성 합성장치
+ - braille : 점자 표시 장치
+ - print : 인쇄 용도
+ - screen : 컴퓨터 스크린  ... 모바일 기기도 screen이다. 
+
+-- all, print, screen이 주로 사용된다.
+
+ex ) 간단한 미디어 쿼리
+ @media screen and ( max-width:100px ){
+    div { background-color: blue; } 
+ }
