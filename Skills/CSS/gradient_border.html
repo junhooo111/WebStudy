@@ -1,0 +1,39 @@
+<html>
+ <head>
+ </head>
+
+ <body>
+
+	<style>
+		body {
+		  text-align: center;
+		}
+
+		.gradient-border {
+		  box-sizing: border-box;
+		  display: inline-block;
+		  margin: 10px;
+		  width: 150px;
+		  height: 150px;
+		  border-style: solid;
+		  border-image: linear-gradient(to right, #01c9ca 0%, #3886FF 100%);
+		  border-image-slice: 1;
+		  background: #f7f7f7;
+		}
+
+		.top { border-image-width: 20px 0 0 0; }
+		.bottom { border-image-width: 0 0 0 20px; }
+		.left { border-image-width: 0 0 20px 0; }
+		.right { border-image-width: 0 20px 0 0; }
+		.all { border-image-width: 20px; }
+	</style>
+
+	<h1>gradient border example</h1>
+	<div class="gradient-border top"></div>
+	<div class="gradient-border bottom"></div>
+	<div class="gradient-border left"></div>
+	<div class="gradient-border right"></div>
+	<div class="gradient-border all"></div>
+
+ </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+ <head>
+ </head>
+
+ <body>
+
+	<style>
+		body {
+		  text-align: center;
+		}
+
+		a {
+		  position: relative;
+		  font-size: 20px;
+		  text-decoration: none;
+		  color: #000;
+		  transition: all 0.2s;
+		}
+
+		a:hover {
+		  color: #01c9ca;
+		}
+
+		a:before {
+		  content: '';
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  display: block;
+		  width: 100%;
+		  height: 1px;
+		  background: #000;
+		  transform: scale(0);
+		  transition: all 0.2s;
+		}
+
+		a:hover:before {
+		  background: #01c9ca;
+		  transform: scale(1);
+		}
+	</style>
+
+	<h1>Text Hover Effect</h1>
+	<a href="#">마우스를 올려보세요!</a>
+
+ </body>
+</html>
