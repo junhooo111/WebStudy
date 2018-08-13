@@ -1,0 +1,29 @@
+<html>
+ <head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+ </head>
+
+ <body>
+
+	<script>
+
+		function innerHTMLTest(){
+			var now = new Date();
+			var year= now.getFullYear();
+			var mon = (now.getMonth()+1)>9 ? ''+(now.getMonth()+1) : '0'+(now.getMonth()+1);
+			var day = now.getDate()>9 ? ''+now.getDate() : '0'+now.getDate();
+
+
+			alert(year + mon + day);
+			alert(year + '년 ' + mon + '월 ' + day + '일');
+		}
+
+	</script>
+
+	<div id="todya_date">Today_date!</div>
+	<button onclick="innerHTMLTest()">???</button>
+
+ </body>
+</html>
